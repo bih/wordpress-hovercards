@@ -1,4 +1,6 @@
 CHANGELOG:
 
-v1.0.0 [Released: 5th June 2012]
+1.0.0 (18/6/12)
 - Initial release
+- Bug tests complete
+- Built to support WordPress 3.4 (latest version)
