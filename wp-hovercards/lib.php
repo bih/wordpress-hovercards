@@ -5,7 +5,8 @@
 	Description: Enable post & pages hovercards within your WordPress blog.
 	Author: Bilawal Hameed
 	Author URI: http://www.bilawal.co.uk
-	Version: 1.0.0
+	License: GPL
+	Version: 1.0.1
 */
 
 // If you set WP_DEBUG to true, we'll automatically show errors from our app. I &hearts; integration.
@@ -14,7 +15,7 @@ if(constant('WP_DEBUG') == 0) {
 }
 
 // This defines the version of WordPress Hovercards
-define('WP_HOVERCARDS', '1.0.0');
+define('WP_HOVERCARDS', '1.0.1');
 
 /*
 	@added: v0.0.1
@@ -90,7 +91,7 @@ function wp_hovercards_js() {
     
     // And now the CSS file!
     wp_deregister_style( 'wp-css-hovercards' );
-    add( 'wp-css-hovercards', plugins_url('wp-hovercards/wp-hovercards.css'));
+    wp_register_style( 'wp-css-hovercards', plugins_url('wp-hovercards/wp-hovercards.css'));
     wp_enqueue_style( 'wp-css-hovercards' );
 }
 

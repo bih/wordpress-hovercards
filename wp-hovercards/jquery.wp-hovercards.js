@@ -2,7 +2,10 @@
 var WP_Hovercards = {
 	
 	/* @note: This is to ensure compatibility for future versions. */
-	version: '1.0.0',
+	version: '1.0.1',
+	
+	/* @note: This is to stop any problems loading multiple hovercards at once. */
+	is_busy: false,
 	
 	/* @note: This prevents making constant requests to the server. It's a bit pointless for partially static data. */
 	cache: new Array(),
@@ -55,12 +58,13 @@ var WP_Hovercards = {
 		}
 		
 		if(_url == (parent.document.location || document.location)) {
-			// This is the page we're on - surely we don't need it?
+			// If this is the page we're on - surely we don't need it?
 			return;
 		}
 		
 		if(output.version !== WP_Hovercards.version) {
 			// A different version to the one on the server
+			// No problems right now, but in future versions, it may be needed.
 		}
 		
 		// If we didn't make a successful request, let's still cache this to the engine.
@@ -69,12 +73,18 @@ var WP_Hovercards = {
 			return;
 		}
 		
+		// Let's show the element now!
+		jQuery('div.wp-hovercards-root').show().css({
+			top: (event.pageY + 25) + 'px',
+			left: (event.clientX - 17) + 'px'
+		});
+		
 		// Now we're on the element, anywhere we move now will be tracked
-		jQuery(document).mousemove(function(event){
+		jQuery(document).mousemove(function(ev){
 			// Let's update the CSS accordingly
 			jQuery('div.wp-hovercards-root').show().css({
-				top: (event.pageY + 25) + 'px',
-				left: (event.clientX - 17) + 'px'
+				top: (ev.pageY + 25) + 'px',
+				left: (ev.clientX - 17) + 'px'
 			});
 		});
 		
@@ -120,8 +130,13 @@ var WP_Hovercards = {
 			return WP_Hovercards.response(_url, obj, event, WP_Hovercards.cache[_url]);
 		}
 		
+		// This is to stop any requests currently being made. We don't want them anymore!
+		if(WP_Hovercards.is_busy != false) {
+			WP_Hovercards.is_busy.abort();
+		}
+		
 		// Naw.. we need to make a HTTP request to pull up the data.
-		jQuery.getJSON(_url + '?wp_hovercards=json', function(data){ WP_Hovercards.response(_url, obj, event, data); });
+		WP_Hovercards.is_busy = jQuery.getJSON(_url + '?wp_hovercards=json', function(data){ WP_Hovercards.response(_url, obj, event, data); });
 	},
 	
 	/*
