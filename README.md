@@ -1,9 +1,9 @@
-!(http://i.imgur.com/glH7w.png)
+![Hovercard](http://i.imgur.com/glH7w.png "Hovercard")
 
 WordPress Hovercards
 ====================
 
-**WordPress Hovercards** is a open source WordPress plugin that instantly integrates hovercards inside of your WordPress blog without any configuration. It only weighs **4 KB!**.
+**WordPress Hovercards** is a open source WordPress plugin that instantly integrates hovercards inside of your WordPress blog without any configuration. It only weighs **4 KB!** which is incredibly lightweight!
 
 Hovercards have been used for many years by Facebook, Twitter and plenty of other websites as a mean of engagement. It helps encourage people to view other pages on your site, and it is an excellent way to boost the clickthroughs and page views of your blog.
 
@@ -34,4 +34,4 @@ I've been programming since I was 9 years old, and I love open source. I've deci
 
 You can find more about myself, my work and my vision over at [my website](http://www.bilawal.co.uk/).
 
-!(http://i.imgur.com/JHqEI.png)
+![My logo](http://i.imgur.com/JHqEI.png "My logo")
