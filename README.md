@@ -40,6 +40,7 @@ Changelog
 About the Author
 ---------------------
 ![My logo](http://i.imgur.com/JHqEI.png "My logo")
+
 Bilawal Hameed is a 19 year old web developer, entrepreneur and student from Manchester, UK.
 
 I've been programming since I was 9 years old, and I love open source. I've decided that it's time that I give back to the community, and I have released my plugin for free and I have plenty of other plugins on the way.
