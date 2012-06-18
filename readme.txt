@@ -46,3 +46,6 @@ We aim to try to make updates once every couple weeks.
 * Initial release
 * Bug tests complete
 * Built to support WordPress 3.4 (latest version)
+
+== Upgrade Notice ==
+N/A
