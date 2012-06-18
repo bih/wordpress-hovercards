@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<title>WordPress Hovercards Documentation</title>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="http://yandex.st/highlightjs/6.0/highlight.min.js"></script>
+<link rel="stylesheet" href="http://yandex.st/highlightjs/6.0/styles/dark.min.css">
+
+<script type="text/javascript">
+  hljs.tabReplace = '    ';
+  hljs.initHighlightingOnLoad();
+</script>
+
+<style>
+html, body {  margin:0;  padding:0; background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%); /* W3C */ } 
+#pagewidth { }
+#leftcol { width:20%; float:left; position:fixed;  }
+#maincol{ border:1px dotted #cdcdcd; position: relative; width:80%; float:right; overflow:auto; background:#fff; }
+#maincol div#layer { padding:10px; border-top:3px ridge #acacac; margin-bottom:40px; }
+.clearfix:after { content: ".";  display: block; height: 0;  clear: both;  visibility: hidden; }
+ .clearfix{display: inline-block;}
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+@media print{ #leftcol{display:none;}
+#twocols, #maincol{width:100%; float:none;} }
+h1 { position:fixed; z-index:400; width:100%; text-align:center; padding:28px; margin:0px; font-family:arial; font-size:28px; letter-spacing:-1px; background:#ddd; color:#EBF5FF; }
+#leftcol p { font-family:'Open Sans', 'Helvetica Neue', arial; font-size:17px; padding:0px 0px 0px 23px; }
+#leftcol ul { margin:0px; padding:0 0 0 20px; }
+#leftcol ul li { font-family:arial; font-size:13px; padding:5px 5px 2px 5px; list-style:none; margin:0px; }
+#leftcol ul li a { text-decoration:none; color:#393134; font-family:'Open Sans', 'Helvetica Neue', 'Segoe UI', verdana, arial; font-size:13px; }
+#maincol div h3 { font-family:arial; font-size:21px; padding:0px; }
+#maincol div p { margin-left:25px; padding:0px; font-family:'Open Sans', 'Helvetica Neue', 'Segoe UI', verdana, arial; line-height:25px; font-weight:normal; font-size:14px; }
+#maincol div ul { margin:0px; padding-left:65px; }
+#maincol div ul li {  font-family:'Open Sans', 'Helvetica Neue', 'Segoe UI', verdana, arial; line-height:22px; font-weight:normal; font-size:12px; list-style:square; }
+#maincol div h4 { margin:0px 0px 0px 25px; padding:14px 10px 14px 10px; font-family:arial; font-weight:normal; font-size:17px; background:#efefef; }
+#maincol pre { padding-left:25px; }
+#maincol pre code { padding:10px; }
+div#code { margin-left:25px; padding:8px; background:#efefef; overflow:auto; width:auto; }
+code { padding:0px; font-size:13px; }
+span#highlight { padding:4px; font-family:courier new, arial; font-size:12px; background:#101033; color:#fff; opacity:0.8; filter:alpha(opacity=80); }
+
+div#version { position:fixed; z-index:104; bottom:0px; right:0px; padding:14px 25px 14px 25px; background:#E84848; font-style:italic; font-family:georgia, verdana, arial; font-size:17px; line-height:24px; color:#FFEBEB; opacity:0.8; filter:alpha(opacity=80); }
+
+div#layer h3 a {
+	font-family:'Impact', arial;
+	font-size:24px;
+	text-transform:uppercase;
+	font-weight:normal;
+	letter-spacing:2px;
+}
+
+img.branding {
+	padding:3px 86px 3px 86px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	width:80px;
+	height:80px;
+}
+
+div#masthead-spacing {
+	padding-top:155px;
+}
+
+</style>
+
+<script type="text/javascript">
+SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+<div id="pagewidth" >
+	<div id="wrapper" class="clearfix">
+	
+		<h1><img src="./../images/logo.png" style="max-width:325px;"></h1>
+		
+		<div id="masthead-spacing"></div>
+	
+		<div id="maincol">
+			
+			<div id="layer">
+				<h3><a name="1">01. Introduction</a></h3>
+				<p>I've decided to release my first ever WordPress plugin to the community, and it brings you the beauty of WordPress hovercards in your website. It uses some unique ways to ensure that data is available in JSON through your backend, and it can be processed through jQuery and JavaScript to look awesomely gorgeous in your frontend!</p>
+				<p>Hovercards is designed to work out of the box. Enable it and suddenly it does magic. It finds its own way to obtain the information it needs, and present it in a beautiful and crisp design. Backed by a flawless JavaScript design, you can't ask for more in a simple plugin.</p>
+				<p>The reason we designed this plugin was because Hovercards increases user engagement massively, as it makes browsing your website more easier. Users can see what an article is about through the excerpt without even clicking a button. It just works; it's smart, and it's the first of it's kind.</p>
+			</div>
+			
+			<div id="layer">
+				<h3><a name="2">02. Installation</a></h3>
+				<p>How to install Hovercards on WordPress</p>
+				<p><iframe src="http://www.screenr.com/embed/CV08" width="650" height="396" frameborder="0"></iframe></p>
+				
+			</div>
+			
+			<div id="layer">
+				<h3><a name="3">03. Background image</a></h3>
+				<p>Hovercards will accept any image URL through a custom field 'image' as seen below, or as a featured image if it is supported on your theme. Once either of them have been provided, Hovercards will do the rest.</p>
+				<p><img src='custom.png'></p>
+				<br />
+								
+			</div>
+			
+			<div id="layer">
+				<h3><a name="4">04. Settings</a></h3>
+				<p>Hovercards will insert a setting panel when you add/edit pages or posts, which is where Hovercards is currently supported. This can be designed to tailor every single aspect of a hovercard from background effects, to custom CSS classes that can be used in <b>wp-hovercards.css</b> element alongside the <b>div.content</b> element.</p>
+				<p><img src='sidebar.png'></p>
+				<br>
+				
+				<p>Here's an example of a CSS effect of making text red (to enable set as 'red' in custom classes in box above on posts/pages).</p>
+				<pre><code>div.wp-hovercards-root div.content.red div.excerpt { color:#ff0000; }</code></pre>
+			
+			</div>			
+		</div>
+
+		<div id="leftcol">
+		
+			<p><b>Contents</b></p>
+			<ul>
+			<li><a href="#1">01. Introduction</a></li>
+			<li><a href="#2">02. Installation</a></li>
+			<li><a href="#3">03. Background image</a></li>
+			<li><a href="#4">04. Settings</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

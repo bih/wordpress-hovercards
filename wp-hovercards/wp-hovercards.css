@@ -1,0 +1,148 @@
+/* The beautiful CSS file to join the WordPress Hovercards library. Produced by @bilawalhameed */
+
+div.wp-hovercards-root {
+	display: none;
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	
+	min-width: 100px;
+	min-height: 100px;
+}
+
+div.wp-hovercards-root:hover {
+	cursor: pointer;
+}
+
+div.wp-hovercards-root div.content.disable {
+	opacity: 0 !important;
+	display: none !important;
+	visibility: none !important;
+}
+
+div.wp-hovercards-root div.content {
+	/* This can be changed to whatever you wish to size your hovercards! */
+	min-width: 400px;
+	max-width: 600px;
+	min-height: 110px;
+	max-height: 150px;
+	border-radius: 5px;
+	
+	background-color: #aaa;
+	background-image: linear-gradient(bottom, rgb(201,201,201) 1%, rgb(230,230,230) 51%);
+	background-image: -o-linear-gradient(bottom, rgb(201,201,201) 1%, rgb(230,230,230) 51%);
+	background-image: -moz-linear-gradient(bottom, rgb(201,201,201) 1%, rgb(230,230,230) 51%);
+	background-image: -webkit-linear-gradient(bottom, rgb(201,201,201) 1%, rgb(230,230,230) 51%);
+	background-image: -ms-linear-gradient(bottom, rgb(201,201,201) 1%, rgb(230,230,230) 51%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.01, rgb(201,201,201)),
+		color-stop(0.51, rgb(230,230,230))
+	);
+
+	background-position: center center;
+	border: 2px solid #000;
+	border: 2px solid rgba(0, 0, 0, .7);
+}
+
+div.wp-hovercards-root div.content div.wp {
+	background: url(./images/wp.gif);
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+div.wp-hovercards-root div.content h3 {
+	color: #000;
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0px 1px rgba(0, 0, 0, .05);
+	background: rgba(255, 255, 255, .7);
+	
+	margin: 0px;
+	padding: 10px !important;
+}
+
+div.wp-hovercards-root div.content div.excerpt {
+	float: left;
+	width: 60%;
+	font-size: 10px;
+	height: 60px;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+div.wp-hovercards-root div.content div.excerpt p {
+	padding: 6px 4px;
+	margin: 0;
+	line-height: 15px;
+	color:#000;
+	
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+	overflow: scroll;
+	max-width: 250px;
+	
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+div.wp-hovercards-root div.content div.details {
+	float: left;
+	width: 35%;
+}
+
+div.wp-hovercards-root div.content div.details ul {
+	padding:0;
+	margin:0;
+}
+
+div.wp-hovercards-root div.content div.details ul li {
+	font-size: 11px;
+	color: #444;
+	padding:5px 0 0 0;
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+	line-height: 13px;
+	list-style: circle inside;
+	margin: 0;
+}
+
+div.wp-hovercards-root div.content.white div.details ul li,
+div.wp-hovercards-root div.content.white div.excerpt p {
+	color: rgba(255, 255, 255, .8);
+}
+
+div.wp-hovercards-root div.content:after, div.wp-hovercards-root div.content:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " "; 
+	height: 0; 
+	width: 0; 
+	position: absolute; 
+	pointer-events: none; 
+}
+
+div.wp-hovercards-root div.content:after {
+	border-bottom-color: #000;
+	border-bottom-color: rgba(0, 0, 0, .7); 
+	border-width: 6px; 
+	left: 20px; 
+	margin-left: -6px; 
+}
+
+div.wp-hovercards-root div.content:before {
+	border-bottom-color: #000;
+	border-bottom-color: rgba(0, 0, 0, .7);
+	border-width: 8px; 
+	left: 20px; 
+	margin-left: -8px;
+}

@@ -1,0 +1,4 @@
+CHANGELOG:
+
+v1.0.0 [Released: 5th June 2012]
+- Initial release

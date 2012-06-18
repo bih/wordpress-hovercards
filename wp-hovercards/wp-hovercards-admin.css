@@ -1,0 +1,70 @@
+/* The beautiful Admin CSS file to join the WordPress Hovercards library. Produced by @bilawalhameed */
+
+.wp-hovercards {
+	width: 99%;
+	min-height: 550px;
+	background: #288bbd;
+	position: relative;
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana';
+}
+
+.wp-hovercards img.wphc-logo {
+	padding-left: 10px;
+}
+
+.wp-hovercards .by {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	width: 114px;
+	height: 114px;
+	background: url(./images/bilawalhameed.png) 10px 10px no-repeat #fff;
+	border-left: 1px solid #288bbd;
+	border-bottom: 1px solid #288bbd;
+	border-radius:0 0 0 10px;
+}
+
+.wp-hovercards h2 {
+	padding: 30px 15px;
+	margin: 0;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0px -1px rgba(0,0,0,1);
+	letter-spacing: -0.05em;
+	font-size: 50px;
+}
+
+.wp-hovercards hr {
+	border:0;
+	background: #8DC3E0;
+	width: 97%;
+	height: 1px;
+}
+
+.wp-hovercards p.paragraph {
+	color: #A3DFFF;
+	font-size: 18px;
+	line-height: 26px;
+	padding:0 18px 10px;
+}
+
+.wp-hovercards p.paragraph a {
+	color: #A3DFFF;
+	text-decoration: underline;
+}
+
+.wp-hovercards p.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 17px;
+	padding: 0 10px;
+}
+
+.wp-hovercards p.footer,
+.wp-hovercards p.footer a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0px -1px rgba(0,0,0,.5);
+}
