@@ -1,4 +1,4 @@
-(http://i.imgur.com/glH7w.png)
+!(http://i.imgur.com/glH7w.png)
 
 WordPress Hovercards
 ====================
@@ -34,4 +34,4 @@ I've been programming since I was 9 years old, and I love open source. I've deci
 
 You can find more about myself, my work and my vision over at [my website](http://www.bilawal.co.uk/).
 
-(http://i.imgur.com/JHqEI.png)
+!(http://i.imgur.com/JHqEI.png)
