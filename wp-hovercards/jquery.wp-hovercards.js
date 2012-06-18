@@ -1,4 +1,13 @@
-/* The beautiful JavaScript library to join the WordPress Hovercards library. Produced by @bilawalhameed */
+/*
+	Plugin Name: WordPress Hovercards
+	Plugin URI: http://github.com/bilawal360/wordpress-hovercards
+	Description: Enable post & pages hovercards within your WordPress blog.
+	Author: Bilawal Hameed
+	Author URI: http://www.bilawal.co.uk
+	License: GPLv2
+	Version: 1.0.1
+*/
+
 var WP_Hovercards = {
 	
 	/* @note: This is to ensure compatibility for future versions. */
@@ -133,6 +142,7 @@ var WP_Hovercards = {
 		// This is to stop any requests currently being made. We don't want them anymore!
 		if(WP_Hovercards.is_busy != false) {
 			WP_Hovercards.is_busy.abort();
+			WP_Hovercards.is_busy = false;
 		}
 		
 		// Naw.. we need to make a HTTP request to pull up the data.

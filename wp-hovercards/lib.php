@@ -5,7 +5,7 @@
 	Description: Enable post & pages hovercards within your WordPress blog.
 	Author: Bilawal Hameed
 	Author URI: http://www.bilawal.co.uk
-	License: GPL
+	License: GPLv2
 	Version: 1.0.1
 */
 

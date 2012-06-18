@@ -1,4 +1,12 @@
-/* The beautiful Admin CSS file to join the WordPress Hovercards library. Produced by @bilawalhameed */
+/*
+	Plugin Name: WordPress Hovercards
+	Plugin URI: http://github.com/bilawal360/wordpress-hovercards
+	Description: Enable post & pages hovercards within your WordPress blog.
+	Author: Bilawal Hameed
+	Author URI: http://www.bilawal.co.uk
+	License: GPLv2
+	Version: 1.0.1
+*/
 
 .wp-hovercards {
 	width: 99%;
