@@ -86,18 +86,18 @@ function wp_hovercards_js() {
     
     // Let's included the minified version of WordPress Hovercards
     wp_deregister_script( 'wp-hovercards' );
-    wp_register_script( 'wp-hovercards', plugins_url('wp-hovercards/jquery.wp-hovercards.min.js'));
+    wp_register_script( 'wp-hovercards', plugins_url('wordpress-hovercards/jquery.wp-hovercards.min.js'));
     wp_enqueue_script( 'wp-hovercards' );
     
     // And now the CSS file!
     wp_deregister_style( 'wp-css-hovercards' );
-    wp_register_style( 'wp-css-hovercards', plugins_url('wp-hovercards/wp-hovercards.css'));
+    wp_register_style( 'wp-css-hovercards', plugins_url('wordpress-hovercards/wp-hovercards.css'));
     wp_enqueue_style( 'wp-css-hovercards' );
 }
 
 function wp_hovercards_admin_js() {
 	// Admin only css
-    echo '<link rel="stylesheet" href="'. plugins_url('wp-hovercards/wp-hovercards-admin.css') .'" type="text/css" />';
+    echo '<link rel="stylesheet" href="'. plugins_url('wordpress-hovercards/wp-hovercards-admin.css') .'" type="text/css" />';
 }
 
 
@@ -181,7 +181,7 @@ function wp_hovercards_json_encode($post)
 		'version' => constant('WP_HOVERCARDS'),
 		'post' => array(
 			'ID' => $post->ID,
-			'post_timthumb' => plugins_url( 'wp-hovercards/external/timthumb.php?src=' ) . wp_hovercards_get_post_image($post->ID),
+			'post_timthumb' => plugins_url( 'wordpress-hovercards/external/timthumb.php?src=' ) . wp_hovercards_get_post_image($post->ID),
 			'post_image' => wp_hovercards_get_post_image($post->ID),
 			'post_custom_class' => $_custom_class,
 			'post_category_single' => implode(', ', $category),
@@ -308,7 +308,7 @@ function wp_hovercards_edit_html( $post ) {
 	echo "<br><p><label>Add custom classes (separate by comma): <input type='text' name='_hovercard_class' value='". get_post_meta($post->ID, '_hovercard_class', 1) ."'></label></p>";
 	
 	// Learn more?
-	echo "<a href='". plugins_url('/wp-hovercards/html/documentation.html') ."' target='_blank'>Learn more about these settings</a>";
+	echo "<a href='". plugins_url('/wordpress-hovercards/html/documentation.html') ."' target='_blank'>Learn more about these settings</a>";
 }
 
 function wp_hovercard_edit_html_each( $post, $custom_data_name, $frontend_js_name, $name ) {
@@ -330,7 +330,7 @@ function wp_hovercards_admin() {
 function wp_hovercards_admin_html() {
     // And the HTML of course for the admin page!
 	echo "<div class='wp-hovercards'>
-		<img class='wphc-logo' src='".plugins_url('/wp-hovercards/images/wp-hovercards.png')."'>
+		<img class='wphc-logo' src='".plugins_url('/wordpress-hovercards/images/wp-hovercards.png')."'>
 		<!-- h2>WordPress Hovercards</h2 -->
 		
 		<p class='paragraph'>Thanks for downloading WP Hovercards, my first free WordPress plugin!</p>
